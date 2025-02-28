@@ -1,20 +1,48 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import Title from './src/components/title';
+import Main from './src/components/main';
+
+const colorIngenicoBrand = 'rgba(25, 182, 221,1)'; 
 
 export default function App() {
   return (
+    
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+        <Title />
+
+      <View style={styles.backgroudBlue}>  
+        <Main/>
+      </View>
+
     </View>
   );
 }
 
+const commonStyles = {
+  flex: 1,
+  justifyContent: 'center',
+  alignItems: 'center',
+  justifyContent: 'space-between', 
+
+};
+
 const styles = StyleSheet.create({
-  container: {
+  container:{
+
+    commonStyles,
     flex: 1,
-    backgroundColor: '#fff',
+    alignContent: 'center',
+    justifyContent: 'center',
+  },
+
+  backgroudBlue: {
+    commonStyles,
+    flex: 1,
+    backgroundColor: colorIngenicoBrand, 
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 10,
+    borderRadius: 10,
+
   },
 });
