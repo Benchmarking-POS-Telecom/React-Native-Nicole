@@ -1,4 +1,4 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Text, Linking} from 'react-native';
 import Title from './src/components/title';
 import Main from './src/components/main';
 
@@ -8,41 +8,57 @@ export default function App() {
   return (
     
     <View style={styles.container}>
-        <Title />
+
+
+      <View style={styles.backgroudWhite}>  
+        <Title/>
+      </View>
 
       <View style={styles.backgroudBlue}>  
         <Main/>
+      </View>
+
+
+      <View>
+        < Text style={styles.link} onPress={() => Linking.openURL('https://github.com/Nicolesilvaa')}> 
+          By Nilewa 
+        </Text> 
       </View>
 
     </View>
   );
 }
 
-const commonStyles = {
-  flex: 1,
-  justifyContent: 'center',
-  alignItems: 'center',
-  justifyContent: 'space-between', 
-
-};
-
+//Estilo----------------------------------------------------------------------------------------------------
 const styles = StyleSheet.create({
-  container:{
 
-    commonStyles,
+  container: {
     flex: 1,
-    alignContent: 'center',
-    justifyContent: 'center',
   },
 
-  backgroudBlue: {
-    commonStyles,
-    flex: 1,
-    backgroundColor: colorIngenicoBrand, 
+  backgroudWhite: {
+    flex: 0.2,
+    backgroundColor: '#fff',
+    justifyContent: 'center',
     alignItems: 'center',
+  },
+ 
+  backgroudBlue: {
+    flex: 1,
+    backgroundColor: 'rgba(25, 182, 221, 1)',
     justifyContent: 'center',
-    padding: 10,
-    borderRadius: 10,
+    alignItems: 'center',
+    borderTopLeftRadius: 40, 
+    borderTopRightRadius: 40,
+  },
+
+  link:{
+    padding: 15,
+    color: '#fff',
+    textDecorationLine: 'underline',
+    textAlign: 'center',
+    backgroundColor: 'rgba(25, 182, 221, 1)',
 
   },
+
 });

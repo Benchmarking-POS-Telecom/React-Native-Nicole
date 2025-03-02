@@ -12,18 +12,34 @@ export default function Title(){
     );
 }
 
+//Estilo----------------------------------------------------------------------------------------------------
 const styles = StyleSheet.create({
-
+    
     container: {
-      marginTop: 50,
+      flex: 1,
+      flexDirection: 'row',
+      justifyContent:'center',
+      alignItems: 'center',
+
+      paddingHorizontal: 10,
+    },
+  
+    square: {
+      width: 150,
+      height: 150,
+      margin: 10,
+      backgroundColor: '#fff',
+      borderRadius: 5,
+      shadowColor: '#000',
+      shadowOpacity: 0.1,
+      shadowRadius: 5,
+      elevation: 7,
     },
 
-    title: {
-
-      padding: 50,
-      color: '#007aff',
-      fontWeight: 'bold',
-      fontSize: 20,
-
+    title:{
+        color: '#007aff',
+        fontWeight: 'bold',
+        fontSize: 20,
+        textAlign: 'center',
     }
 });
