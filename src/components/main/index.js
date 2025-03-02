@@ -18,25 +18,25 @@ export default function Main() {
             <View style={styles.body}>
                 <View>
                     <View style={styles.square}>
-                        <Image source={require('../images/cartao.png')}  style={styles.logo}/> 
-                        <Text style={styles.logoText}> Cartão </Text>
+                        <Image source={require('../images/cartao.png')}  style={styles.icon}/> 
+                        <Text style={styles.iconText}> Cartão </Text>
                     </View>
 
                     <View style={styles.square}>
-                        <Image source={require('../images/aproximacao.png')}  style={styles.logo}/>
-                        <Text style={styles.logoText}> Aproximação </Text>
+                        <Image source={require('../images/aproximacao.png')}  style={styles.icon}/>
+                        <Text style={styles.iconText}> Aproximação </Text>
                     </View>
                 </View>
 
                 <View>
                     <View style={styles.square}>
-                        <Image source={require('../images/pix.png')}  style={styles.logo}/>
-                        <Text style={styles.logoText}> Pix </Text>
+                        <Image source={require('../images/pix.png')}  style={styles.icon}/>
+                        <Text style={styles.iconText}> Pix </Text>
                     </View>
 
                     <View style={styles.square}>
-                        <Image source={require('../images/conf.png')}  style={styles.logo}/>
-                        <Text style={styles.logoText}> Configurações </Text>
+                        <Image source={require('../images/conf.png')}  style={styles.icon}/>
+                        <Text style={styles.iconText}> Configurações </Text>
                     </View>
                 </View>         
             </View>        
@@ -86,14 +86,14 @@ const styles = StyleSheet.create({
         alignItems: 'center', 
     },
 
-    logo: { 
+    icon: { 
         padding: 10,
         alignItems: 'center',
         width: 50,
         height: 50,
       },
 
-    logoText:{
+    iconText:{
         color: '#007aff',
         fontSize: 15,
         textAlign: 'center',

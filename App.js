@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
 
   link:{
     padding: 15,
+    fontSize: 16,
     color: '#fff',
     textDecorationLine: 'underline',
     textAlign: 'center',
