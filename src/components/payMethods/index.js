@@ -11,12 +11,12 @@ const PayMethods = () => {
 
         <View style={styles.container}>
 
-            //Texto do corpo
+            {/* Texto do corpo */}
             <View style={styles.textBody}> 
                 <Text style={styles.mainText}> Olá ! Escolha o método de pagamento </Text>
             </View>
 
-            // Conteúdo principal, Quadrados com formas de pagamento
+             {/* Conteúdo principal, Quadrados com formas de pagamento */}
             <View style={styles.body}>
                 <View>
                     <View style={styles.square}>
